@@ -1,17 +1,18 @@
 
 # Statistical Testing with z-score and p-value
 
+## Introduction
 Before we move with some basic data analysis, we need to quickly go through a few basic concepts. This lesson will introduce a few new concepts , which we shall revisit and look in more detail during later section on statistics. 
 
 ## Objectives
-Students would be able to:
+You will be able to:
 * Differentiate between statistical distributions as populations or samples
 * Understand the types of statistical testing approaches
 * Understand z-table and use sciPy to get z probabilities
 * Set up null and alternative hypotheses for statistical significance testing
 * Understand and explain the role of p-values, and significance threshold towards statistical significance
 
-## Introduction
+## Statistical significance
 
 Statistical significance is one of those terms that is often used when someone claims that some data collection and analysis proves a **point** (or hypothesis). The terminology associated with statistical significance is usually not well understood and results are accepted by masses, however, it is a simple idea that can be understood fairly easily.
 ![](http://imgs.xkcd.com/comics/boyfriend.png)
@@ -79,7 +80,7 @@ Not really, there are a huge number of statistical tests and we always select th
 
 Right now, lets talk about the most basic type of statistical testing technique called a **one-sample z-test**. 
 
-### One-sample z-test
+## One-sample z-test
 
 The one-sample Z test is used when we want to know whether our sample comes from a particular population. For instance, when collecting data from successive cohorts of students taking the Data Science course,  we may want to know if this particular sample of students is similar to or different from Flatiron students in general. 
 
@@ -184,7 +185,7 @@ If that p-value is high, it means that the chances were very high to obtain the 
 
 ![](http://blog.analytics-toolkit.com/wp-content/uploads/2017/09/2017-09-11-Statistical-Significance-P-Value-1.png)
 
-### What Is the Significance Threshold (Alpha)?
+## What Is the Significance Threshold (Alpha)?
 The significance level, also denoted as alpha or α, is the probability of rejecting the null hypothesis when it is true. For example, a significance level of 0.05 indicates a 5% risk of concluding that a difference exists when there is no actual difference.
 
 These types of definitions can be hard to understand because of their technical nature. A picture makes the concepts much easier to comprehend!
