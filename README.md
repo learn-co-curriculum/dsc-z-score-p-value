@@ -38,20 +38,20 @@ Imagine we want to run a survey of the job prospects of the students studying at
 
 #### What is the population?
 
-You can go ahead and contact all the students studying Flatiron school campuses around the world in our physical campuses. But that would not be the whole population of Flatiron students. A lot of students take Flatiron's courses online. Including those students from all over the world would make a COMPLETE student population at Flatiron. Also, by the time you finish contacting all these students, you would realize that a lot of new students have enrolled onto the courses since you last surveyed. 
+You can go ahead and contact all the students studying Flatiron school campuses around the world in our physical campuses. But that would not be the whole population of Flatiron students. A lot of students take Flatiron's courses online. Including those students from all over the world would make a COMPLETE student population at Flatiron. Also, by the time you finish contacting all these students, you would realize that a lot of new students have enrolled in the courses since you last surveyed. 
 
 So, you can see that populations are hard to describe and inspect in real life.
 
-#### What is a sample ?
+#### What is a sample?
 A sample is much easier to describe and inspect. Running a survey on a sample is less time consuming and less costly too. Time and resources are the main reasons we prefer drawing samples over working with entire populations. 
 
-As we first wanted to do, we can just go to the New York campus. We can visit during the lunch hour in the canteen, because we know it will be full of people.  We can then interview 50 of them. This would be called a student sample.
+As we first wanted to do, we can just go to the New York campus. We can visit during the lunch hour in the canteen because we know it will be full of people.  We can then interview 50 of them. This would be called a student sample.
 
-![](https://2.bp.blogspot.com/-baO4QOGRINE/WvXw27RAi2I/AAAAAAAADy8/rDLGC2igVQU2wj21Nds6zvRMfcjBVQVMACLcBGAs/s1600/Capture2.PNG)
+<img src="images/sample_2.png" width ="600">
 
 #### Is the sample "representative" ?
 
-So what are the chances these 50 can provide us answers that are a true representation of the whole student population of Flatiron School globally? You guessed it, the chances are pretty low. The sample is _neither_ **random** nor **representative** of whole population.
+So what are the chances these 50 can provide us answers that are a true representation of the whole student population of Flatiron School globally? You guessed it, the chances are pretty low. The sample is _neither_ **random** nor **representative** of the whole population.
 
 >A random sample is collected when each member of the sample is chosen from the population strictly by chance. In order for the sample to be random, each member should be equally likely to be chosen.
 
@@ -65,21 +65,21 @@ Our sample represented the NYC campus students who have lunch at the canteen. If
 
 By now, you must be wondering how to draw a sample that is both random and representative. Well, the safest way would be to get access to the student database with **all students around the world** and contact individuals in a random manner. 
 
-![](http://assets.pearsonschool.com/file-vault/flipbooks/texasreview/mathematics/digits/TX_Digits_HomeworkHelper_HTML_Files/Grade%207/Volume%202/images/U01/p356-002.jpg)
+
+<img src="images/repres_sample.jpg" width ="450">
 
 We said populations are hard to define and observe. Then, we saw that sampling is difficult. But samples have two big advantage: 
 
-1. Once well-understoor, it is not that hard to recognize if a sample is representative
+1. Once well-understood, it is not that hard to recognize if a sample is a representative one
 2. Statistical tests are designed to work with incomplete data, so making a small sampling error is not always a problem
 
 Now that we understand using samples vs. populations, we can move on with statistical testing.
 
 ## Statistical Testing
 
-There are a huge number of statistical tests and you will always try to  select the one that best fits your research design. [This link](https://stats.idre.ucla.edu/spss/whatstat/what-statistical-analysis-should-i-usestatistical-analyses-using-spss/) provides a quick introduction to a number of testing criteria. We'll cover some of these in-depth later on. Here is a quick summary of some of these tests.
-![](https://image.slidesharecdn.com/t11-typesoftests-120411124844-phpapp02/95/t11-types-of-tests-9-728.jpg?cb=1334148728)
+There are a huge number of statistical tests and you will always try to select the one that best fits your research design. [This link](https://stats.idre.ucla.edu/spss/whatstat/what-statistical-analysis-should-i-usestatistical-analyses-using-spss/) provides a quick introduction to a number of testing criteria. We'll cover some of these in-depth later on.
 
-Right now, lets talk about one of the most basic type of statistical testing techniques based on the z-score, the one-sample z-test.
+Right now, let’s talk about one of the most basic types of statistical testing techniques based on the z-score, the one-sample z-test.
 
 ## The One-sample z-test
 
@@ -99,13 +99,13 @@ A z-table contains cumulative probabilities of a standard normal distribution up
 
 > **The area under the whole of a normal distribution curve is 1, or 100 percent. The z-table helps by telling us what percentage is under the curve up to any particular point.**
 
-[Here is a link to an on-line version of z-table](http://www.z-table.com/).
-This lesson's github repository also contains a pdf version of this table.
+[Here is a link to an online version of z-table](http://www.z-table.com/).
+This lesson's GitHub repository also contains a pdf version of this table.
 
 - **The rows** of the table contain z-values in the form $x.x$ along the left margins of the table, specifying the ones and tenths.
 - **The columns** finetune these values to hundredths, allowing us to look up the probability of being below any standardized value z of the form $x.xx$.
 
-You know that a cumulative probability is the sum of the probabilities of all values up until a given point. An easy example is the mean. The mean is the exact middle of the normal distribution, so we know that the sum of all probabilites of getting values from the left side up until the mean is 0.5. Also the sum of probabilities from the mean to right tail would also sum up to 0.5. The mean is denoted by the red line in the image below.
+You know that a cumulative probability is the sum of the probabilities of all values up until a given point. An easy example is the mean. The mean is the exact middle of the normal distribution, so we know that the sum of all probabilities of getting values from the left side up until the mean is 0.5. Also, the sum of probabilities from the mean to right tail would also sum up to 0.5. The mean is denoted by the red line in the image below.
 
 <img src="images/stdnorm.png" width="700">
 
@@ -113,7 +113,7 @@ When using the idea of cumulative probability in the context of the standard nor
 
 <img src="images/cum.jpg" width="530">
 
-As sum of all probabilities is equal to 1 or 100%, you can use the z-table to calculate probabilities on both sides of the z-score under the standard normal distribution.
+As the sum of all probabilities is equal to 1 or 100%, you can use the z-table to calculate probabilities on both sides of the z-score under the standard normal distribution.
 
 <img src="images/cum2.jpg" width="530">
 
@@ -130,9 +130,9 @@ Use the z-table to find where the row for 1.3 intersects with the column for 0.0
 
 [Here is a short video on how to use z-table](https://www.youtube.com/watch?v=lgwT6tDniko)
 
-## The z-table alternative in python 
+## The z-table alternative in python 
 
-When programming in Python, Scipy provides a handful of features so you wont have to go out consulting z-tables for automated analysis. For normal distributions, probabilities **up to the z score** can be calculated with `.cdf` method as shown below:
+When programming in Python, Scipy provides a handful of features so you won’t have to go out consulting z-tables for automated analysis. For normal distributions, probabilities **up to the z score** can be calculated with `.cdf`-method as shown below:
 
 
 ```python
@@ -155,7 +155,6 @@ A very important aspect of statistical testing is setting up a hypothesis to be 
 The hypothesis is a data scientist's initial understanding about an observation prior to the testing. This Hypothesis is known as the **Alternative Hypothesis** (written as $H_a$).
 
 The opposite to the Alternative Hypothesis is known as a **Null Hypothesis** (written as $H_0$).
-![](https://i.pinimg.com/originals/b1/ec/b3/b1ecb32b61f78e63eb2f7926ced1ef33.jpg)
 
 The table below shows three sets of Null and Alternative Hypotheses. Each makes a statement about how the mean $\mu$ is related to some hypothesized value $M$. 
 
@@ -164,8 +163,8 @@ The table below shows three sets of Null and Alternative Hypotheses. Each makes 
 |---------|-------|-------|-------|
 |<img width=30/>|<img width=100/>|<img width=100/>|<img width=50/>|
 | 1  | $\mu= M $ |$\mu \neq M $ | 2  | 
-| 2  | $\mu > M $ |$\mu < M $ | 1  | 
-| 3  | $\mu < M $ |$\mu > M $ | 1  | 
+| 2  | $\mu \geq M $ |$\mu < M $ | 1  | 
+| 3  | $\mu \leq M $ |$\mu > M $ | 1  | 
 
 Here the tails represent if we are testing both sides of the distribution or only one side.
 
@@ -199,7 +198,8 @@ We you then verify whether what we you obtained (sample mean) is consistent with
 
 If your p-value is low, we say that that the result is **significant**, in the sense that you conclude that the sample mean is **significantly different** from the population mean.
 
-![](http://blog.analytics-toolkit.com/wp-content/uploads/2017/09/2017-09-11-Statistical-Significance-P-Value-1.png)
+<img src="images/p_value_2.png" width ="700">
+
 
 ## What is the Significance Threshold (alpha, $\alpha$)?
 
