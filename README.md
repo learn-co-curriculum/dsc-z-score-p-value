@@ -126,13 +126,13 @@ To find the answer using the z-table, you have to go and look where the row for 
 
 > What is the probability of a z-score being greater or equal to 1.34?
 
-Use the z-table to find where the row for 1.3 intersects with the column for 0.04, which is 0.9099. Because the z-table gives you only “less than” probabilities, subtract P(Z < 1.34) from 1 (remember that the total probability is 1.00 or 100%). So, **1 - 0.9099 = 0.0901**. 
+Use the z-table to find where the row for 1.3 intersects with the column for 0.04, which is 0.9099. Because the z-table gives you only "less than" probabilities, subtract P(Z < 1.34) from 1 (remember that the total probability is 1.00 or 100%). So, **1 - 0.9099 = 0.0901**. 
 
 [Here is a short video on how to use z-table](https://www.youtube.com/watch?v=lgwT6tDniko)
 
 ## The z-table alternative in python 
 
-When programming in Python, Scipy provides a handful of features so you won’t have to go out consulting z-tables for automated analysis. For normal distributions, probabilities **up to the z score** can be calculated with `.cdf`-method as shown below:
+When programming in Python, Scipy provides a handful of features so you won't have to go out consulting z-tables for automated analysis. For normal distributions, probabilities **up to the z score** can be calculated with `.cdf`-method as shown below:
 
 
 ```python
@@ -174,7 +174,7 @@ In this case, the Null Hypothesis states that the new drug has no effect on the 
 
 ## P-value 
 
-You will now learn about the **P-value** as a statistical summary of the compatibility between the observed data and what you would expect to see in a population assuming the statistical model is correct. The concepts of p-value and level of significance are vital components of hypothesis testing and methods like regression. However, they can be a little tricky to understand. We'll try to explain the concpept in an easy, logical way. 
+You will now learn about the **P-value** as a statistical summary of the compatibility between the observed data and what you would expect to see in a population assuming the statistical model is correct. The concepts of p-value and level of significance are vital components of hypothesis testing and methods like regression. However, they can be a little tricky to understand. We'll try to explain the concept in an easy, logical way. 
 
 > In hypothesis testing you set a null hypothesis, then draw a sample, and test your null hypothesis based on that sample.
 
@@ -205,9 +205,9 @@ If your p-value is low, we say that that the result is **significant**, in the s
 
 You noticed that we talked about "high" and "low" p-values, but that is pretty vague. What number is high and what number is low?
 
-This is where the significance level, also denoted as alpha or $\alpha$ comes in. $\alpha$ is the treshold value that defines whether a p-value is low or high. You can define your alpha level yourself, but you'll see that an alpha level of $\alpha = 0.05$ is most commonly used. You'll see $\alpha = 0.1$ and $\alpha = 0.01$ appear frequently as well. 
+This is where the significance level, also denoted as alpha or $\alpha$ comes in. $\alpha$ is the threshold value that defines whether a p-value is low or high. You can define your alpha level yourself, but you'll see that an alpha level of $\alpha = 0.05$ is most commonly used. You'll see $\alpha = 0.1$ and $\alpha = 0.01$ appear frequently as well. 
 
-What level of alpha to use depends on your situation. Chosing a low alpha leads to a test thatis more strict, so you will be less likely to be able to reject your null-hypothesis (which is generally what you want). Chosing a higher p-value leads to a higher probability of rejecting the null-hypothesis. The downside of a higher alpha level, however, is that you're running a higher risk of falsely concluding that there is a difference between your null-hypothesis and your observed results while there actually isn't any.
+What level of alpha to use depends on your situation. Choosing a low alpha leads to a test that is more strict, so you will be less likely to be able to reject your null-hypothesis (which is generally what you want). Choosing a higher p-value leads to a higher probability of rejecting the null-hypothesis. The downside of a higher alpha level, however, is that you're running a higher risk of falsely concluding that there is a difference between your null-hypothesis and your observed results while there actually isn't any.
 
 This may all seem a little vague for now. You'll get a better understanding when we dig deeper later on.
 
