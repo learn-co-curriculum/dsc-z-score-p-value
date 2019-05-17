@@ -47,7 +47,7 @@ A sample is much easier to describe and inspect. Running a survey on a sample is
 
 As we first wanted to do, we can just go to the New York campus. We can visit during the lunch hour in the canteen because we know it will be full of people.  We can then interview 50 of them. This would be called a student sample.
 
-<img src="images/sample_2.png" width ="600">
+<img src="images/sample.png" width ="600">
 
 #### Is the sample "representative" ?
 
@@ -66,7 +66,7 @@ Our sample represented the NYC campus students who have lunch at the canteen. If
 By now, you must be wondering how to draw a sample that is both random and representative. Well, the safest way would be to get access to the student database with **all students around the world** and contact individuals in a random manner. 
 
 
-<img src="images/repres_sample.jpg" width ="450">
+<img src="images/rep_sample.png" width ="650">
 
 We said populations are hard to define and observe. Then, we saw that sampling is difficult. But samples have two big advantage: 
 
@@ -107,15 +107,15 @@ This lesson's GitHub repository also contains a pdf version of this table.
 
 You know that a cumulative probability is the sum of the probabilities of all values up until a given point. An easy example is the mean. The mean is the exact middle of the normal distribution, so we know that the sum of all probabilities of getting values from the left side up until the mean is 0.5. Also, the sum of probabilities from the mean to right tail would also sum up to 0.5. The mean is denoted by the red line in the image below.
 
-<img src="images/stdnorm.png" width="700">
+<img src="images/snorm.png" width="550">
 
 When using the idea of cumulative probability in the context of the standard normal distribution, we look at the cumulative distribution until a point $z$.
 
-<img src="images/cum.jpg" width="530">
+<img src="images/cumprob.png" width="530">
 
 As the sum of all probabilities is equal to 1 or 100%, you can use the z-table to calculate probabilities on both sides of the z-score under the standard normal distribution.
 
-<img src="images/cum2.jpg" width="530">
+<img src="images/cumprob2.png" width="530">
 
 Using z-scores, you can answer questions like "how far is a value from the mean" and "how likely is a value this far from the mean to be from the same group of observations?"
 
@@ -198,7 +198,7 @@ We you then verify whether what we you obtained (sample mean) is consistent with
 
 If your p-value is low, we say that that the result is **significant**, in the sense that you conclude that the sample mean is **significantly different** from the population mean.
 
-<img src="images/p_value_2.png" width ="700">
+<img src="images/pvalue.png" width ="700">
 
 
 ## What is the Significance Threshold (alpha, $\alpha$)?
