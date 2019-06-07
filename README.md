@@ -184,15 +184,15 @@ For example, imagine your $H_0$ is $x=10$. Upon drawing a sample, you get a mean
 
 You will basically say that based on current evidence and testing, the null hypothesis is not true. 
 
-> If your p-value is high, you will reject your null hypothesis.
+> If your p-value is high, you will fail to reject your null hypothesis.
 
-You will accept the null hypothesis, that is, you will say that based on current evidence and testing, the null hypothesis cannot be rejected. You'll often see that the word phrase "accepting a null hypothesis" is barely used. Generally, conclusions of tests will state "We reject $H_0$" or "We cannot reject $H_0$", which feels less definitive and leaves room for errors while testing.
+You will fail to reject the null hypothesis, that is, you will say that based on current evidence and testing, the null hypothesis cannot be rejected. You'll often see that the word phrase "accepting a null hypothesis" is barely used. Generally, conclusions of tests will state "We reject $H_0$" or "We cannot reject $H_0$", which feels less definitive and leaves room for errors while testing.
 
 >It is important to understand what you have **assumed** and what you have **observed**
 
 You assumed your population mean is 10, without actually observing that. You have observed a sample mean of 12 after testing your sample.
 
-We you then verify whether what we you obtained (sample mean) is consistent with what we have assumed (population mean). In other words, what are the chances of getting the result (sample mean) if the assumption is actually true (population mean). What is the probability that sample mean is 12, assuming that population mean is 10? 
+We then verify whether what we you obtained (sample mean) is consistent with what we have assumed (population mean). In other words, what are the chances of getting the result (sample mean) if the assumption is actually true (population mean). What is the probability that sample mean is 12, assuming that population mean is 10? 
 
 **This chance or probability is called a p-value.**
 
