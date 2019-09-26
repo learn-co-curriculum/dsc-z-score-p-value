@@ -1,5 +1,5 @@
 
-# Statistical Testing with $z$-score and p-value
+# Statistical Testing with z-score and p-value
 
 ## Introduction
 
@@ -81,7 +81,7 @@ There are a huge number of statistical tests and you will always try to select t
 
 Right now, let’s talk about one of the most basic types of statistical testing techniques based on the $z$-score, the one-sample $z$-test.
 
-## The One-sample $z$-test
+## The One-sample z-test
 
 The one-sample $z$-test is used when you want to know if your sample comes from a particular population.
 
@@ -93,7 +93,7 @@ When running a one-sample z-test, you test whether the average of the sample sug
 
 You already know what a $z$-score is and how to standardize a dataset into a $z$-distribution. By itself, the $z$-score doesn't provide a lot of information to conclude a question significantly (except for saying how many standard deviations some observation is from a mean). The real value from a $z$-test comes from comparing it against a **z-table**.
 
-## The $z$-table
+## The z-table
 
 A $z$-table contains cumulative probabilities of a standard normal distribution up until a given $z$-score value. By transforming normal distributions with various means and standard deviations, you can use this $z$-table for any value that follows a normal distribution. The $z$-table is short for the “Standard Normal $z$-table”. 
 
@@ -130,7 +130,7 @@ Use the $z$-table to find where the row for 1.3 intersects with the column for 0
 
 [Here is a short video on how to use a z-table](https://www.youtube.com/watch?v=lgwT6tDniko)
 
-## The $z$-table alternative in python 
+## The z-table alternative in python 
 
 When programming in Python, SciPy provides a handful of features so you won't have to go out consulting $z$-tables for automated analysis. For normal distributions, probabilities **up to the $z$-score** can be calculated with `.cdf`-method as shown below:
 
