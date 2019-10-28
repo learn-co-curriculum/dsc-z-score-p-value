@@ -187,7 +187,7 @@ For example, imagine your null hypothesis $H_0$ is that the population mean $\mu
 
 > If your p-value is high, you will fail to reject your null hypothesis. You will fail to reject the null hypothesis, that is, you will say that **based on current evidence and testing, the null hypothesis cannot be rejected.** 
 
-You'll see that the phrase "accepting a null hypothesis" is not used. This is because, conclusions of hypothesis tests will state that "we reject $H_0$ in favor of $H_a$" or that "we cannot reject $H_0$ in favor of $H_a$", which is less definitive and leaves room for errors while testing. You reject or fail to reject a null hypothesis based on the evidence you have.
+You'll see that the phrase "accepting a null hypothesis" is not used. This is because conclusions of hypothesis tests will state that "we reject $H_0$ in favor of $H_a$" or that "we cannot reject $H_0$ in favor of $H_a$", which is less definitive and leaves room for errors while testing. You reject or fail to reject a null hypothesis based on the evidence you have.
 
 >It is important to understand what you have **assumed** and what you have **observed**
 
