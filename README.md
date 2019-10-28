@@ -8,11 +8,13 @@ In this lesson, you'll learn how the $z$-score is important when performing stat
 ## Objectives
 
 You will be able to:
-* Differentiate between statistical distributions as populations or samples
-* Understand the types of statistical testing approaches
-* Understand the $z$-table and use SciPy to get $z$-probabilities
-* Set up null and alternative hypotheses for statistical significance testing
-* Understand and explain the role of p-values, and significance threshold towards statistical significance
+
+* Compare and contrast a population and a sample
+* Explain what is meant by a "representative" sample
+* Use the z-table and `scipy` methods to acquire the p value for a given z-score
+* Define what null and alternative hypotheses mean and when they are used
+* Define the significance threshold and its relation to p-value
+
 
 ## Statistical significance
 
@@ -43,7 +45,7 @@ You can go ahead and contact all the students studying at Flatiron School campus
 So you can see that populations are hard to describe and inspect in real life.
 
 #### What is a sample?
-A sample is much easier to describe and inspect. Conducting a survey on a sample is less time consuming and less costly too. Time and resources are the main reasons we prefer drawing samples over working with entire populations. 
+A sample is much easier to describe and inspect. Conducting a survey on a sample is less time-consuming and less costly too. Time and resources are the main reasons we prefer drawing samples over working with entire populations. 
 
 As we first wanted to do, we can just go to the New York campus. We can visit during the lunch hour in the canteen because we know it will be full of people.  We can then interview 50 of them. This would be called a student sample.
 
@@ -51,7 +53,7 @@ As we first wanted to do, we can just go to the New York campus. We can visit du
 
 #### Is the sample "representative" ?
 
-So what are the chances these 50 can provide us answers that are a true representation of the whole student population of Flatiron School globally? You guessed it, the chances are pretty low. The sample is _neither_ **random** nor **representative** of the whole population.
+So what are the chances these 50 students can provide us answers that are a true representation of the whole student population of Flatiron School globally? You guessed it, the chances are pretty low. The sample is _neither_ **random** nor **representative** of the whole population.
 
 >A random sample is collected when each member of the sample is chosen from the population strictly by chance. In order for the sample to be random, each member should be equally likely to be chosen.
 
@@ -64,7 +66,6 @@ It is clear that these two requirements were violated by picking 50 students fro
 Our sample represented the NYC campus students who have lunch at the canteen. If we ran a survey about job prospects of Flatiron students who eat in the NYC campus canteen, we would have done well.
 
 By now, you must be wondering how to draw a sample that is both random and representative. Well, the safest way would be to get access to the student database with **all students around the world** and contact individuals in a random manner. 
-
 
 <img src="images/rep_sample.png" width ="650">
 
@@ -87,7 +88,7 @@ The one-sample $z$-test is used when you want to know if your sample comes from 
 
 For instance, when collecting data from successive cohorts of students taking the Data Science Bootcamp, you may want to know if this particular sample of students is similar to or different from Flatiron students in general. 
 
-> **The one-sample $z$-test is used only for tests related to the sample mean** 
+> **The one-sample $z$-test is used only for tests related to the sample mean.** 
 
 When running a one-sample z-test, you test whether the average of the sample suggests that the students come from a certain population with a known mean or whether it may come from a different population.
 
@@ -100,10 +101,10 @@ A $z$-table contains cumulative probabilities of a standard normal distribution 
 > **The area under the whole of a normal distribution curve is 1, or 100 percent. The $z$-table helps by telling us what percentage is under the curve up to any particular point.**
 
 [Here is a link to an online version of z-table](http://www.z-table.com/).
-This lesson's GitHub repository also contains a pdf version of this table.
+This lesson's GitHub repository also contains a pdf version of this table, `z-table.pdf`.
 
 - **The rows** of the table contain $z$-values in the form $x.x$ along the left margins of the table, specifying the ones and tenths.
-- **The columns** finetune these values to hundredths, allowing us to look up the probability of being below any standardized value $z$ of the form $x.xx$.
+- **The columns** fine-tune these values to hundredths, allowing us to look up the probability of being below any standardized value $z$ of the form $x.xx$.
 
 You know that a cumulative probability is the sum of the probabilities of all values up until a given point. An easy example is the mean. The mean is the exact middle of the normal distribution, so we know that the sum of all probabilities of getting values from the left side up until the mean is 0.5. Also, the sum of probabilities from the mean to right tail would also sum up to 0.5. The mean is denoted by the red line in the image below.
 
@@ -136,10 +137,12 @@ When programming in Python, SciPy provides a handful of features so you won't ha
 
 
 ```python
-# Z-table in python 
+# Z-table in Python 
 import scipy.stats as stats
+
 # Probabilities up to z-score of 1.5
 print(stats.norm.cdf(1.5))
+
 # Probabilities greater than z-score of 1.34
 print (1-stats.norm.cdf(1.34))
 ```
@@ -178,21 +181,19 @@ You will now learn about the **p-value** as a statistical summary of the compati
 
 > In hypothesis testing you set a null hypothesis, then draw a sample, and test your null hypothesis based on that sample.
 
-For example, imagine your $H_0$ is $x=10$. Upon drawing a sample, you get a mean of $12$. With the p-value, you are going to obtain a probability that given a null hypothesis of $x=10$, you would observe a sample mean of 12. 
+For example, imagine your $H_0$ is $x=10$. Upon drawing a sample, you get a mean of $12$. **With the p-value, you are going to obtain a probability that given a null hypothesis of $x=10$, you would observe a sample mean of 12.** 
 
-> If your p-value is low, you will reject your null hypothesis.
+> If your p-value is low, you will reject your null hypothesis. You will basically say that **based on current evidence and testing, the null hypothesis is not true.**
 
-You will basically say that based on current evidence and testing, the null hypothesis is not true. 
+> If your p-value is high, you will fail to reject your null hypothesis. You will fail to reject the null hypothesis, that is, you will say that **based on current evidence and testing, the null hypothesis cannot be rejected.** 
 
-> If your p-value is high, you will fail to reject your null hypothesis.
-
-You will fail to reject the null hypothesis, that is, you will say that based on current evidence and testing, the null hypothesis cannot be rejected. You'll often see that the phrase "accepting a null hypothesis" is barely used. Generally, conclusions of tests will state "We reject $H_0$" or "We cannot reject $H_0$", which feels less definitive and leaves room for errors while testing.
+You'll see that the phrase "accepting a null hypothesis" is barely used. This is because, conclusions of tests will state that "we reject $H_0$ in favor of $H_a$" or that "we cannot reject $H_0$ in favor of $H_a$", which feels less definitive and leaves room for errors while testing. 
 
 >It is important to understand what you have **assumed** and what you have **observed**
 
 You assumed your population mean is 10, without actually observing that. You have observed a sample mean of 12 after testing your sample.
 
-You then verify whether what you obtained (sample mean) is consistent with what you have assumed (population mean). In other words, what are the chances of getting the result (sample mean) if the assumption is actually true (population mean). What is the probability that the sample mean is 12, assuming that the population mean is 10? 
+You then verify whether the sample mean you obtained is consistent with the population mean you have assumed. In other words, what are the chances of getting the result (sample mean) if the assumption is actually true (population mean). What is the probability that the sample mean is 12, assuming that the population mean is 10? 
 
 **This chance or probability is called a p-value.**
 
@@ -207,7 +208,7 @@ You noticed that we talked about "high" and "low" p-values, but that is pretty v
 
 This is where the significance level, also denoted as alpha or $\alpha$ comes in. $\alpha$ is the threshold value that defines whether a p-value is low or high. You can define your alpha level yourself, but you'll see that an alpha level of $\alpha = 0.05$ is most commonly used. You'll see $\alpha = 0.1$ and $\alpha = 0.01$ appear frequently as well. 
 
-What level of alpha to use depends on your situation. Choosing a low alpha leads to a test that is more strict, so you will be less likely to be able to reject your null-hypothesis (which is generally what you want). Choosing a higher p-value leads to a higher probability of rejecting the null-hypothesis. The downside of using a higher alpha level, however, is that you run a higher risk of falsely concluding that there is a difference between your null-hypothesis and your observed results when there actually isn't any.
+**What level of alpha to use depends on your situation**. Choosing a lower alpha leads to a test that is more strict, so you will be less likely to be able to reject your null-hypothesis (which is generally what you want). Choosing a higher alpha or significance level leads to a higher probability of rejecting the null-hypothesis. The downside of using a higher alpha level, however, is that you run a higher risk of falsely concluding that there is a difference between your null-hypothesis and your observed results when there actually isn't any.
 
 This may all seem a little vague for now. You'll get a better understanding when we dig deeper later on.
 
